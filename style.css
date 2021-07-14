@@ -1,6 +1,7 @@
 /* common style or utilities */
 body{
     margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -37,7 +38,22 @@ body{
     width: 556px;
 }
 
-/* player's styles  */
+
+/************
+ player's styles  
+ ************/
+.container {
+    margin-bottom: 100px;
+}
+
+.section-title{
+    font-size: 50px;
+    font-weight: bold;
+    color: mediumblue;
+    /* text-align: center; */
+    position: relative;
+    left: 150px;
+}
 
 .players{
     display: grid;
@@ -69,6 +85,48 @@ body{
 }
 
 
+
+/**************** 
+extra section styles
+******************* */
+
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2 ,560px);
+    justify-content: center;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+   
+
+}
+
+.achievement {
+    display: grid;
+    grid-template-columns: repeat(4 , 250px);
+    justify-content: center;
+    /* display: flex;
+    align-items: center; */
+}
+.trophy{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 450px;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+.trophy img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
 /* footer's style  */
 
 
@@ -82,7 +140,7 @@ body{
     grid-template-columns: repeat(1 , 484px);
     justify-content: center;
     text-align: center;
-    margin: 158px 0 67px;
+    margin: 58px 0 67px;
 
 }
 .footer img {
