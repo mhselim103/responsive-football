@@ -63,10 +63,10 @@ background-color:orangered;
     font-size: 50px;
     font-weight: bold;
     color: mediumblue;
-    /* text-align: center; */
     position: relative;
     left: 150px;
 }
+
 
 .players{
     display: grid;
@@ -113,7 +113,7 @@ extra section styles
 
 .videos{
     display: grid;
-    grid-template-columns: repeat(2 ,560px);
+    grid-template-columns: repeat(3 ,350px);
     justify-content: center;
     grid-row-gap: 30px;
     grid-column-gap: 30px;
@@ -141,7 +141,7 @@ extra section styles
 }
 .trophy img {
     width: 100%;
-    /* object-fit: cover; */
+    
 }
 
 
@@ -150,11 +150,7 @@ extra section styles
 
 
 .footer{
-    /* width: 484px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
+   
     display: grid;
     grid-template-columns: repeat(1 , 484px);
     justify-content: center;
@@ -174,4 +170,72 @@ margin:10px;
 .fab {
     margin-right: 10px;
    
+}
+
+/*************
+ Media Query 
+********* */
+
+/* mobile device  */
+
+
+@media only screen and (max-width:480px) {
+    .header {
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 69px;
+        padding:0 25px;
+     
+    }
+    .header h1 {
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        
+    }
+   
+    
+    .header img {
+        width: 80%;
+        
+    }
+    .container{
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(1 , 350px);
+        justify-content: center;
+        grid-row-gap: 27px;
+       
+    }
+    .section-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    position: relative;
+    left: 40px;
+    }
+
+    .videos {
+        grid-template-columns: repeat(1 ,350px);
+    }
+    .achievement {
+        display: grid;
+        grid-template-columns: repeat(1 , 250px);
+        justify-content: center;
+        grid-row-gap: 10px;
+    }
+    .footer{
+        
+        grid-template-columns: repeat(1 , 350px);
+        justify-content: center;
+        text-align: center;
+        margin-top: 58px;
+        margin-bottom: 67px;
+    
+    }
+    
 }
